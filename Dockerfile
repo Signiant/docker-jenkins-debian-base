@@ -103,7 +103,8 @@ RUN echo "Defaults:$BUILD_USER !requiretty" >> /etc/sudoers \
   && chmod 700 /home/$BUILD_USER/.ssh
 
 # Save some space
-RUN apt-get autoremove && apt-get clean
+RUN apt-get autoremove && apt-get clean \
+  && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
 EXPOSE 22
 
