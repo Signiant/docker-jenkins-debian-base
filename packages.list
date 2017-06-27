@@ -6,7 +6,6 @@ git
 figlet
 python
 python-dev
-python-pip
 python-setuptools
 subversion
 zlib1g-dev

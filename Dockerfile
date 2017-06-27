@@ -15,6 +15,7 @@ RUN chmod +r /tmp/packages.list && \
 # && sudo apt-get install -y nodejs \
 # && apt-get update && apt-get install yarn
 
+RUN easy_install pip
 
 #RUN pip install python-jenkins docker python-jenkins maestroops && pip show maestroops
 RUN pip install docker-compose
